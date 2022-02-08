@@ -1,0 +1,23 @@
+:root {
+	--main-txt-color1: black;
+}
+
+#nav_bar {
+	position: fixed;
+	bacbackground-color: #333;
+	top: 0;
+	width: 100%;
+}
+
+#nav_bar a {
+	float: left;
+	display: inline-block;
+	text-align: center;
+	paddpadding: 14px;
+	text-decoration: none;
+	color: var(--main-txt-color1);
+}
+
+p {
+	min-height: 800px;
+}
