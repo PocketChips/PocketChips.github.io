@@ -21,12 +21,12 @@
 	color: var(--top-navbar-text);
 }
 
-#navbar a:hover {
+#nav_bar a:hover {
   background-color: var(--top-navbar-bckg-hover);
   color: var(--main-txt-color1);
 }
 
-#navbar a.active {
+#nav_bar a.active {
   background-color: var(--top-navbar-bckg-active);
   color: white;
 }
