@@ -1,5 +1,8 @@
 :root {
 	--main-txt-color1: black;
+	--top-navbar-text: #f2f2f2;
+	--top-navbar-bckg-active: #04AA6D;
+	--top-navbar-bckg-hover: #ddf;
 }
 
 #nav_bar {
@@ -13,9 +16,19 @@
 	float: left;
 	display: inline-block;
 	text-align: center;
-	paddpadding: 14px;
+	padding: 14px;
 	text-decoration: none;
-	color: var(--main-txt-color1);
+	color: var(--top-navbar-text);
+}
+
+#navbar a:hover {
+  background-color: var(--top-navbar-bckg-hover);
+  color: var(--main-txt-color1);
+}
+
+#navbar a.active {
+  background-color: var(--top-navbar-bckg-active);
+  color: white;
 }
 
 p {
