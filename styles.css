@@ -7,8 +7,9 @@
 
 #nav_bar {
 	position: fixed;
-	bacbackground-color: #333;
+	background-color: #333;
 	top: 0;
+	left: 0;
 	width: 100%;
 }
 
@@ -22,13 +23,13 @@
 }
 
 #nav_bar a:hover {
-  background-color: var(--top-navbar-bckg-hover);
-  color: var(--main-txt-color1);
+  	background-color: var(--top-navbar-bckg-hover);
+  	color: var(--main-txt-color1);
 }
 
 #nav_bar a.active {
-  background-color: var(--top-navbar-bckg-active);
-  color: white;
+  	background-color: var(--top-navbar-bckg-active);
+  	color: white;
 }
 
 p {
