@@ -1,37 +1,66 @@
-:root {
-	--main-txt-color1: black;
-	--top-navbar-text: #f2f2f2;
-	--top-navbar-bckg-active: #04AA6D;
-	--top-navbar-bckg-hover: #ddf;
+body {
+  margin: 0;
 }
 
-#nav_bar {
-	position: fixed;
-	background-color: #333;
-	top: 0;
-	left: 0;
-	width: 100%;
+.header {
+  background-color: #f2f2f2;
+  height: 80px;
+  padding: 10px;
+  text-align: center
 }
 
-#nav_bar a {
-	float: left;
-	display: inline-block;
-	text-align: center;
-	padding: 14px;
-	text-decoration: none;
-	color: var(--top-navbar-text);
+/* Style the navbar */
+#navbar {
+  top: 0;
+  left: 0;
+  width: 100&;
+  overflow: hidden;
+  background-color: #333;
 }
 
-#nav_bar a:hover {
-  	background-color: var(--top-navbar-bckg-hover);
-  	color: var(--main-txt-color1);
+/* Navbar links */
+#navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
 }
 
-#nav_bar a.active {
-  	background-color: var(--top-navbar-bckg-active);
-  	color: white;
+#navbar a:hover {
+  background-color: #ddf;
+  color: black;
 }
 
-p {
-	min-height: 800px;
+#navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+#welcome {
+  font-family: Impact, sans-serif;
+  color: #17A;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.page {
+  height: 800px;
 }
