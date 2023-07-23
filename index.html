@@ -1,42 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="https://pocketchips.github.io/js/javascript_functions.js"></script>
-    <title>PocketChips - Home</title>
-  </head>
+	<head>
+    		<link rel="stylesheet" href="styles/styles.css">
+    		<script src="https://pocketchips.github.io/js/javascript_functions.js"></script>
+    		<title>PocketChips - Home</title>
+  	</head>
   
-  <body>
-     <div class="header">
-       <p>
-         Hello World!
-      </p>
-     </div>
+	<body>
+		<div class="header">
+       			<p>Hello World!</p>
+     		</div>
     
-     <div id="navbar">
-      <a href="https://pocketchips.github.io/" class="active">Home</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-     </div> 
-    
-    <h1 id="welcome">HTML\CSS\JS</h1>
-    <p>Welcome to PocketChips main page</p>
-    <p class="page">First page for testing. No definitive design</p>
+     		<div id="navbar">
+      			<a href="https://pocketchips.github.io/" class="active">Home</a>
+      			<a href="#projects">Projects</a>
+      			<a href="#contact">Contact</a>
+     		</div> 
 
-    <script>
-		  window.onscroll = function() {navbarScroll()};
+     		<div class="content">
+	      		<h1 id="welcome">HTML\CSS\JS</h1>
+      			<p>Welcome to PocketChips main page</p>
+	      		<p class="page">First page for testing. No definitive design</p>
+	     	</div>
 
-		  var navbar = document.getElementById("navbar");
-		  var sticky = navbar.offsetTop;
+		<script>
+		  	window.onscroll = function() {navbarScroll()};
 
-		  function navbarScroll() {
-			  if (window.pageYOffset >= sticky) {
-				  navbar.classList.add("sticky");
-			  } else {
-				  navbar.classList.remove("sticky");
-			  }
-		  }
-	  </script>
-    
-  </body>
+		  	var navbar = document.getElementById("navbar");
+		  	var sticky = navbar.offsetTop;
+	
+		  	function navbarScroll() {
+				  if (window.pageYOffset >= sticky) {
+				  	navbar.classList.add("sticky");
+				  } else {
+				  	navbar.classList.remove("sticky");
+				  }
+			}
+		</script>
+	</body>
 </html>
